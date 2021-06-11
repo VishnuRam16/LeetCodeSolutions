@@ -13,11 +13,12 @@ class TwoSum
                 {
                     System.out.println(i+","+j);
                 }
-                else
+                else if(j == nums.length - 1 && i == j-1 && target != nums[i] + nums[j])
                 {
-                  System.out.println("No Solution");
+                  System.out.println("No Solution for other interations");
                 }
             }
+            
         }
         
       
@@ -27,7 +28,7 @@ class TwoSum
     {
       int[] array = {2,7,11,19};
 
-      twoSum(array, 18);
+      twoSum(array, 10);
     }
     
 }
