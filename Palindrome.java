@@ -2,11 +2,11 @@ public class Palindrome
 {
   
 
-  public static void isPalindrome(int x) 
+  public static Boolean isPalindrome(int x) 
     {
         if(x < 0)
         {
-            System.out.println("false");
+            return false;
         }
         
         int rev = 0, rem, temp = x;
@@ -18,20 +18,14 @@ public class Palindrome
             x /= 10;
         }
         
-        if(temp == rev)
-        {
-          System.out.println("true");
-        }
-        else
-        {
-          System.out.println("false");
-        }
+        return temp == rev;
       
     }
 
     public static void main(String[] args)
     {
-      isPalindrome(121);
+      boolean Palin = isPalindrome(121);
+      System.out.println(Palin);
     }
 }
 
