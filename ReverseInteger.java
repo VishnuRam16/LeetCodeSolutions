@@ -1,6 +1,6 @@
 public class ReverseInteger 
 {
-  public static void reverse(int x) 
+  public static int reverse(int x) 
     {
         long rev = 0, rem;
         
@@ -13,17 +13,16 @@ public class ReverseInteger
         
         if ( rev < Integer.MIN_VALUE || rev > Integer.MAX_VALUE)
         {
-        System.out.println(0);
+           return 0;
         }
         else
-        {
-            System.out.println((int)rev);
-        }
+           return (int)rev;
     }
 
     public static void main(String[] args)
     {
-        reverse(123);
+       int revInt =  reverse(123);
+       System.out.println(revInt);
     }
 }
 
