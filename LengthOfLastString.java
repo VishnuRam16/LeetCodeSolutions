@@ -26,3 +26,7 @@ public class LengthOfLastString
       System.out.println(str);
     }
 }
+
+// Runtime: 1 ms, faster than 52.46% of Java online submissions for Length of Last Word.
+// Memory Usage: 37.9 MB, less than 24.81% of Java online submissions for Length of Last Word.
+// Next challenges:
